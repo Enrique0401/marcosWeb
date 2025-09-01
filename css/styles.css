@@ -5,6 +5,15 @@
     --bs-light: #FFFFFF;
 }
 
+.enlace {
+    text-decoration: none !important;
+    color: #0F3B63 !important;
+}
+
+.enlace:hover {
+    color: #0d2f4d !important;
+}
+
 .bg-primary {
     background-color: var(--bs-primary) !important;
 }
@@ -20,7 +29,6 @@
 
 .btn-primary:hover {
     background-color: #0c3050 !important;
-    /* un tono más oscuro */
     border-color: #0c3050 !important;
 }
 
@@ -32,4 +40,48 @@
 .btn-outline-primary:hover {
     background-color: var(--bs-primary) !important;
     color: var(--bs-light) !important;
+}
+
+footer {
+    background-color: #FFFFFF !important;
+    color: var(--bs-dark) !important;
+    text-align: center;
+    border-top: 1px solid #e5e5e5;
+}
+
+footer h5 {
+    color: var(--bs-danger);
+    font-weight: bold;
+}
+
+footer a {
+    text-decoration: none !important;
+    color: var(--bs-primary) !important;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: var(--bs-danger) !important;
+}
+
+footer .d-flex a {
+    font-size: 1.5rem;
+}
+
+footer .d-flex {
+    justify-content: center;
+}
+
+@media (min-width: 992px) {
+    footer {
+        text-align: left;
+    }
+
+    footer .d-flex {
+        justify-content: flex-start;
+    }
+
+    footer .text-center {
+        text-align: center !important;
+    }
 }
