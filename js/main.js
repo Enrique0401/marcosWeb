@@ -10,6 +10,20 @@ function togglPassword(inputId, iconId) {
     }
 }
 
+function redirectInicio(event) {
+    event.preventDefault(); 
+    const pass = document.getElementById("password").value;
+    const confirm = document.getElementById("confirmPassword").value;
+
+    if (pass !== confirm) {
+        alert("Las contraseñas no coinciden");
+        return;
+    }
+
+    window.location.href = "../index.html"; 
+}
+
+
 function togglePassword() {
     const password = document.getElementById("password");
     const icon = document.getElementById("toggleIcon");
@@ -20,4 +34,9 @@ function togglePassword() {
         password.type = "password";
         icon.classList.replace("bi-eye-slash", "bi-eye");
     }
+}
+
+function redirectIndex(event) {
+    event.preventDefault();
+    window.location.href = "../index.html";
 }
