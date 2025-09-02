@@ -42,11 +42,9 @@
     color: var(--bs-light) !important;
 }
 
-footer {
-    background-color: #FFFFFF !important;
-    color: var(--bs-dark) !important;
-    text-align: center;
-    border-top: 1px solid #e5e5e5;
+.dropdown-menu .dropdown-item:active {
+    background-color: var(--bs-danger) !important;
+    color: var(--bs-light) !important;
 }
 
 footer h5 {
@@ -83,5 +81,13 @@ footer .d-flex {
 
     footer .text-center {
         text-align: center !important;
+    }
+}
+
+@media (max-width: 991px) {
+    .dropdown-menu {
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+        right: auto !important;
     }
 }
