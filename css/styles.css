@@ -70,6 +70,27 @@ footer .d-flex {
     justify-content: center;
 }
 
+@media (max-width: 767px) {
+    footer {
+        text-align: center;
+    }
+
+    footer .d-flex {
+        justify-content: center;
+    }
+}
+
+@media (min-width: 768px) {
+    footer {
+        text-align: center;
+    }
+
+    footer .d-flex {
+        justify-content: center;
+    }
+}
+
+
 @media (min-width: 992px) {
     footer {
         text-align: left;
@@ -84,10 +105,13 @@ footer .d-flex {
     }
 }
 
-@media (max-width: 991px) {
-    .dropdown-menu {
-        left: 50% !important;
-        transform: translateX(-50%) !important;
-        right: auto !important;
+
+@media (min-width: 1200px) {
+    footer {
+        text-align: left;
+    }
+
+    footer .d-flex {
+        justify-content: flex-start;
     }
 }
